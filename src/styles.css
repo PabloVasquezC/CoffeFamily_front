@@ -1,1 +1,8 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+    --background-dark: #2c1b18;  /* Marrón oscuro (fondo principal) */
+    --coffee-brown: #603913;     /* Marrón café medio (para botones o detalles) */
+    --coffee-light: #d7a77b;     /* Marrón claro o crema (para acentos o áreas de contenido) */
+    --contrast-light: #f1f1f1;   /* Gris claro o blanco suave (para texto o elementos de contraste) */
+    --text-light: #ffffff;       /* Blanco para texto en fondos oscuros */
+    --gray: #a8a8a8;             /* Gris para detalles o borde de elementos */
+  }
