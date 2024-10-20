@@ -1,8 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
+
 :root {
-    --background-dark: #2c1b18;  /* Marrón oscuro (fondo principal) */
+    --background-dark: #131212;  /* Marrón oscuro (fondo secundario) */
+    --background-dark-coffe: #2c1b18;  /* Marrón oscuro (fondo principal) */
+    --background-dark-coffe-transparent: rgba(44, 27, 24, 0.8); /* Marrón oscuro con transparencia */
     --coffee-brown: #603913;     /* Marrón café medio (para botones o detalles) */
     --coffee-light: #d7a77b;     /* Marrón claro o crema (para acentos o áreas de contenido) */
     --contrast-light: #f1f1f1;   /* Gris claro o blanco suave (para texto o elementos de contraste) */
     --text-light: #ffffff;       /* Blanco para texto en fondos oscuros */
     --gray: #a8a8a8;             /* Gris para detalles o borde de elementos */
   }
+
+  body {
+    background-color: var(--background-dark);
+    color: var(--text-light);
+  }
+  
+  h1, h2, h3 {
+    color: var(--coffee-light);
+    font-family: 'Playfair Display SC', serif;
+  }
+  
+  button {
+    background-color: var(--coffee-brown);
+    color: var(--contrast-light);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+  
+  footer {
+    background-color: var(--coffee-brown);
+    color: var(--contrast-light);
+  }
+  
+  .card {
+    background-color: var(--coffee-light);
+    color: var(--background-dark);
+  }
+  

@@ -8,5 +8,14 @@ import { Component } from '@angular/core';
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
+  title = 'Coffee Family';
+  subtitle = 'Bienvenidos a Coffe Family, donde cada grano importa!';
+
+  constructor() { }
+
+  ngOnInit() {
+  }
+
+  
 
 }
