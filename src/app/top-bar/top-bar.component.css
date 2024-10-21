@@ -1,0 +1,24 @@
+.navbar {
+    background-color: var(--background-coffe);
+    border-radius: 40px; 
+
+    .navbar-toggler-icon {
+        color: var(--coffee-light);
+    }
+
+    .navbar-brand {
+        color: var(--coffee-light);
+    }
+
+    .offcanvas-title {
+        color: var(--coffee-light);
+    }
+
+    .btn {
+        background-color: var(--coffee-light);
+        color: var(--background-coffe);
+        border: none;
+    }
+
+
+}

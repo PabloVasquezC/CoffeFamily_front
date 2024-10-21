@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap');
+
 .home-container {
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: 300vh;
     overflow: hidden;
+    display: flex;
     
     .hero-container {
         .hero-image {
@@ -14,27 +17,36 @@
         .overlay {
             height: 100; 
             position: absolute;
-            top: 50%; 
+            top: 17%; 
             text-align: center;  
             background-color: var(--background-dark-coffe-transparent); 
             color: var(--gray);
             padding: 20px; 
             border-radius: 10px; 
+
+            .overlay-title {
+                font-size: 2.5rem; 
+                font-family: 'Ms Madi', cursive;
+            }
         }
     }
 
-    .home-content {
+    .side-hero-content {
         padding: 20px; 
+        margin: 29% auto;
+    
         text-align: center; 
         background-color: var(--background-dark);
     }
 
     .video {
-        top: 0;
         left: 0;
         width: 50vw;
         height: 80vh;
+        margin: 20px  auto;
         object-fit: cover;
+        z-index: -1; /* Coloca el video detrás del contenido */
+
     }
 }
 

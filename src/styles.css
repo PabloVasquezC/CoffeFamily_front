@@ -16,7 +16,7 @@
     color: var(--text-light);
   }
   
-  h1, h2, h3 {
+  h1, h2, h3, h4 {
     color: var(--coffee-light);
     font-family: 'Playfair Display SC', serif;
   }
