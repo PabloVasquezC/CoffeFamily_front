@@ -15,11 +15,11 @@
   </div>
   <div class="offcanvas-body">
     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-      <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="#">Productos</a>
+      <li>
+        <a class="dropdown-item" routerLink="/productos">Productos</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Ofertas</a>
+        <a class="nav-link" routerLink="/ofertas">Ofertas</a> <!-- Cambiado a routerLink -->
       </li>
       <li class="nav-item dropdown">
         <a
@@ -32,12 +32,12 @@
           Más
         </a>
         <ul class="dropdown-menu dropdown-menu-dark">
-          <li><a class="dropdown-item" href="#">Contacto</a></li>
-          <li><a class="dropdown-item" href="#">Nosotros</a></li>
+          <li><a class="dropdown-item" routerLink="/contacto">Contacto</a></li>
+          <li><a class="dropdown-item" routerLink="/nosotros">Nosotros</a></li>
           <li>
             <hr class="dropdown-divider" />
           </li>
-          <li><a class="dropdown-item" href="#">otra cosa</a></li>
+          <li><a class="dropdown-item" href="#">Otra cosa</a></li>
         </ul>
       </li>
     </ul>

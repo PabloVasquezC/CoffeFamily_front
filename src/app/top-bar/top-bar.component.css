@@ -1,5 +1,6 @@
 .navbar {
-    background-color: var(--background-coffe);
+    background: linear-gradient(var(--background-coffe), var(--gray));
+    opacity: .9;
     border-radius: 40px; 
 
     .navbar-toggler-icon {

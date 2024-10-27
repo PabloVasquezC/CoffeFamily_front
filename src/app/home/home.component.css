@@ -2,7 +2,7 @@
 
 .home-container {
     position: relative;
-    width: 100%;
+    width: 100vw;
     height: 300vh;
     overflow: hidden;
     display: flex;
@@ -33,7 +33,7 @@
 
     .side-hero-content {
         padding: 20px; 
-        margin: 29% auto;
+        margin: auto;
     
         text-align: center; 
         background-color: var(--background-dark);
@@ -41,13 +41,14 @@
 
     .video {
         left: 0;
-        width: 50vw;
-        height: 80vh;
-        margin: 20px  auto;
+        width: 60vw;
+        height: 60vh;
+        margin: 100px  100px;
         object-fit: cover;
-        z-index: -1; /* Coloca el video detrás del contenido */
-
+        z-index: -1; 
     }
+
+    
 }
 
 
