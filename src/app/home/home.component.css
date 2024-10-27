@@ -3,29 +3,43 @@
 .home-container {
     position: relative;
     width: 100vw;
-    height: 300vh;
+    height: 300vh; /* Ajusta según sea necesario */
     overflow: hidden;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     
     .hero-container {
-        .hero-image {
+        position: relative; /* Necesario para el posicionamiento absoluto del video */
+        width: 100%; 
+        height: 100vh; /* O cualquier altura deseada */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .video {
+            position: absolute;
+            top: 0; 
+            left: 0;
             width: 100%; 
             height: 100%; 
             object-fit: cover;
+            z-index: 0; 
         }
-        
+
         .overlay {
-            height: 100; 
-            position: absolute;
-            top: 17%; 
+            position: relative;
             text-align: center;  
-            background-color: var(--background-dark-coffe-transparent); 
+            background-color: rgba(0, 0, 0, 0.5); 
             color: var(--gray);
-            padding: 20px; 
+            padding: 80px; 
             border-radius: 10px; 
+            z-index: 1; 
 
             .overlay-title {
-                font-size: 2.5rem; 
+                font-size: 3.5rem; 
                 font-family: 'Ms Madi', cursive;
             }
         }
@@ -34,21 +48,7 @@
     .side-hero-content {
         padding: 20px; 
         margin: auto;
-    
         text-align: center; 
         background-color: var(--background-dark);
     }
-
-    .video {
-        left: 0;
-        width: 60vw;
-        height: 60vh;
-        margin: 100px  100px;
-        object-fit: cover;
-        z-index: -1; 
-    }
-
-    
 }
-
-
