@@ -21,5 +21,25 @@
         border: none;
     }
 
+    #progress {
+        position: fixed;
+        border-radius: 10px;
+        width: 0%;
+        top: 0;
+        height: 3px;
+        background-color: var(--coffee-light);
+        animation: progress-grow auto linear;
+        animation-timeline: scroll(root);
+    }
 
+
+}
+
+@keyframes progress-grow {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
 }

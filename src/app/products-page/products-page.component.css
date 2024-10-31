@@ -14,6 +14,12 @@
         justify-content: center; /* Centra las tarjetas horizontalmente */
         align-items: center; /* Alinea tarjetas desde la parte superior */
     }
+
+    .product-card {
+        animation: reveal linear both;
+        animation-timeline: view();
+        animation-range: entry 20% cover 30%;
+    }
     
     .title {
         font-size: 3.5rem;
@@ -21,3 +27,12 @@
         text-align: center; /* Asegúrate de centrar el texto */
     }
 }
+
+@keyframes reveal {
+    0% {
+        transform: translateY(80px);
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }}

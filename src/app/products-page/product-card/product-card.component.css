@@ -9,6 +9,7 @@
     height: 400px;
     cursor: pointer;
     margin: 20px auto;
+    
   }
   
   .product-card:hover {
@@ -37,4 +38,7 @@
     font-size: 1.2rem;
     color: #dedede;
   }
+
+  
+
   
