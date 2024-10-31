@@ -1,6 +1,10 @@
 <div class="products-page-container">
     <h1 class="title text-white text-center">Productos:</h1>
-    <ng-container **ngFor="let product of productList">
-        <app-product-card [product]="product"></app-product-card>
-    </ng-container>
+    <div class="products-container d-flex row justify-content-center">
+        <app-product-card 
+            *ngFor="let product of products" 
+            [product]="product"
+            class="product-card col-12 col-md-6 col-lg-4"
+            ></app-product-card>
+    </div>
 </div>

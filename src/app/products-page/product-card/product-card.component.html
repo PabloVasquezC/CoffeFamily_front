@@ -1,10 +1,6 @@
-<div class="card">
-    <img class="card-image" [src]="product?.image" alt="product-image">
-    <div class="card-body">
-        <h5 class="card-title
-        text-center">{{ product?.name }}</h5>
-        <p class="card-text">{{ product?.description }}</p>
-        <p class="card-text">{{ product?.price}}</p>
-        <button class="btn btn-primary">Comprar</button>
-    </div>  
+<div class="product-card">
+    <img [src]="product?.image" alt="{{ product?.name }}" class="product-image"/>
+    <h2 class="product-name">{{ product?.name }}</h2>
+    <p class="product-description">{{ product?.description }}</p>
+    <p class="product-price">${{ product?.price }} CLP.</p>
 </div>

@@ -12,5 +12,11 @@ export class ProductCardComponent {
 
   constructor() { }
 
+  ngOnInit() {
+    
+  }
+
   @Input() product: Product | undefined;
+
+
 }
