@@ -2,5 +2,8 @@
     <img [src]="product?.image" alt="{{ product?.name }}" class="product-image"/>
     <h2 class="product-name">{{ product?.name }}</h2>
     <p class="product-description">{{ product?.description }}</p>
-    <p class="product-price">${{ product?.price }} CLP.</p>
+    <div class="d-flex justify-content-around align-items-center">
+        <p class="product-price">${{ product?.price }} CLP.</p>
+        <button class="product-button">Añadir</button>
+    </div>
 </div>
