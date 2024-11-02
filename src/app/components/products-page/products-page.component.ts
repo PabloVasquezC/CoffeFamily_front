@@ -12,8 +12,8 @@ import { provideHttpClient, withFetch } from '@angular/common/http';
   templateUrl: './products-page.component.html',
   styleUrls: ['./products-page.component.css'], // Asegúrate de que sea 'styleUrls'
   providers: [
-    provideHttpClient(withFetch()), // Esto debería ser correcto
-    ProductService
+    
+    ProductService,
   ]
 })
 export class ProductsPageComponent {

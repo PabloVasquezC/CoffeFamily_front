@@ -10,7 +10,7 @@ import { HomeComponent } from './components/home/home.component';
 import { ProductsPageComponent } from './components/products-page/products-page.component';
 import { ProductCardComponent } from './components/products-page/product-card/product-card.component';
 import { CommonModule } from '@angular/common';
-import { provideHttpClient, withFetch } from '@angular/common/http';
+import { provideHttpClient, withFetch, HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   
@@ -23,6 +23,7 @@ import { provideHttpClient, withFetch } from '@angular/common/http';
     ProductsPageComponent,
     ProductCardComponent,
     RouterModule.forRoot(routes),
+    HttpClientModule
   ],
   exports: [
     RouterModule,
