@@ -3,12 +3,14 @@ import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { routes } from './app.routes';
 
+
 import { AppComponent } from './app.component';
-import { AboutComponent } from './about/about.component';
-import { HomeComponent } from './home/home.component';
-import { ProductsPageComponent } from './products-page/products-page.component';
-import { ProductCardComponent } from './products-page/product-card/product-card.component';
+import { AboutComponent } from './components/about/about.component';
+import { HomeComponent } from './components/home/home.component';
+import { ProductsPageComponent } from './components/products-page/products-page.component';
+import { ProductCardComponent } from './components/products-page/product-card/product-card.component';
 import { CommonModule } from '@angular/common';
+import { provideHttpClient, withFetch } from '@angular/common/http';
 
 @NgModule({
   
@@ -27,6 +29,12 @@ import { CommonModule } from '@angular/common';
     ProductCardComponent,
     ProductsPageComponent
   ],
-  providers: [],
+  providers: [
+    provideHttpClient(withFetch()),
+  ],
+  
+
+ 
+
 })
 export class AppModule { }

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Item } from '../models/top-bar/item';
+import { Item } from '../../models/top-bar/item';
 import { SideBarComponent } from '../side-bar/side-bar.component';
 
 @Component({
