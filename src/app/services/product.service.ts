@@ -3,13 +3,14 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Product } from '../models/product/product';
 import { environment } from '../../environments/environment';
+import { prodEnvironment } from '../../environments/environment.prod';
 
 
 @Injectable({
   providedIn: 'root'
 })
 export class ProductService {
-  private apiUrl = environment.apiUrl + 'products'; 
+  private apiUrl = prodEnvironment.apiUrl + 'products'; 
 
   constructor(private http: HttpClient) { }
   
