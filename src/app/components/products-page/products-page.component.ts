@@ -10,7 +10,7 @@ import { provideHttpClient, withFetch } from '@angular/common/http';
   standalone: true,
   imports: [ProductCardComponent, CommonModule],
   templateUrl: './products-page.component.html',
-  styleUrls: ['./products-page.component.css'], // Asegúrate de que sea 'styleUrls'
+  styleUrls: ['./products-page.component.css'], 
   providers: [
     
     ProductService,
