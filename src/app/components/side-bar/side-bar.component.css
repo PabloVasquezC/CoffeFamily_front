@@ -3,3 +3,10 @@ li a:hover {
   color: var(--coffee-light);
 
 }
+
+/* Ajuste del ancho del offcanvas en pantallas pequeñas */
+@media (max-width: 576px) {
+  #offcanvasDarkNavbar {
+    width: 200px !important; /* Cambia el valor según el ancho deseado */
+  }
+}
