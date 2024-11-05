@@ -21,19 +21,21 @@
         border: none;
     }
 
-    #progress {
-        position: relative;
-        border-radius: 10px;
-        top: 0;
-        left: 22px;
-        top: 5px;
-        height: 3px;
-        background-color: var(--coffee-light);
-        animation: progress-grow auto linear;
-        animation-timeline: scroll(root);
-    }
+    
 
 
+}
+
+#progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 4px; 
+    z-index: 100;
+    border-radius: 10px;
+    background-color: var(--coffee-light);
+    animation: progress-grow auto linear;
+    animation-timeline: scroll(root);
 }
 
 @keyframes progress-grow {
@@ -41,6 +43,6 @@
         width: 0%;
     }
     100% {
-        width: 97%;
+        width: 100%;
     }
 }
