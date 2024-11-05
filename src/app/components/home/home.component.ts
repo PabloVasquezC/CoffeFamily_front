@@ -7,7 +7,7 @@ import { AppModule } from '../../app.module';
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [TopBarComponent, CommonModule],
+  imports: [],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })

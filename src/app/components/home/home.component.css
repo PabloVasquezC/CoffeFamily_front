@@ -102,9 +102,8 @@
     max-width: 500px;
     text-align: left;
     font-size: 1.1rem;
-
-    
-
+    flex-direction: column;
+    display: flex
 }
 
 .btn-ver-productos {
