@@ -4,17 +4,16 @@
     padding: 16px;
     text-align: center;
     margin: 10px;
-    transition: box-shadow 0.2s ease;
+    transition: all 0.2s ease;
     width: 350px;
     height: 400px;
     cursor: pointer;
     margin: 20px auto;
-    box-shadow: 5px 8px 12px var(--coffee-brown);
-    
   }
   
   .product-card:hover {
     box-shadow: 3px 5px 10px var(--gray);
+    scale: 1.02;
     
   }
   
@@ -32,12 +31,17 @@
   
   .product-description {
     font-size: 1rem;
-    color: #666;
+    color: #ddd;
   }
   
   .product-price {
     font-size: 1.2rem;
     color: #dedede;
+  }
+
+  .product-button:hover {
+    background-color: var(--coffee-light);
+    color: whitesmoke;
   }
 
   
