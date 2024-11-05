@@ -1,11 +1,13 @@
 import { Component } from '@angular/core';
 import { TopBarComponent } from '../top-bar/top-bar.component';
 import { AppRoutingModule } from '../../app-routing.module';
+import { CommonModule } from '@angular/common';
+import { AppModule } from '../../app.module';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [TopBarComponent, AppRoutingModule],
+  imports: [TopBarComponent, CommonModule],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })

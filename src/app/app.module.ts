@@ -28,7 +28,13 @@ import { provideHttpClient, withFetch, HttpClientModule } from '@angular/common/
   exports: [
     RouterModule,
     ProductCardComponent,
-    ProductsPageComponent
+    ProductsPageComponent,
+    HomeComponent,
+    AboutComponent,
+    AppComponent,
+    CommonModule,
+   
+
   ],
   providers: [
     provideHttpClient(withFetch()),
