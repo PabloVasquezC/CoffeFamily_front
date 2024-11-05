@@ -1,77 +1,109 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap'); */
-
 .home-container {
     position: relative;
     width: 100vw;
-    height: auto; /* Ajusta según sea necesario */
+    height: auto;
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
-    
-    .video-container {
-        position: relative;
-        width: 100vw;
-        height: 100vh;
-        overflow: hidden;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        z-index: -1;
-    }
+}
 
+.video-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+}
 
-    .video {
-        position: fixed;
-        width: 100vw;
-        height: 100vh;
-        object-fit: cover;
-        top: 0;
-        z-index: -1; 
-        margin-bottom: 50px;
-        
+.video {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    top: 0;
+    z-index: -1;
+}
 
-    }
+.content-container {
+    background-color: var(--background-dark);
+    width: 100%;
+    padding: 20px;
+}
 
-        
-    
+.overlay {
+    position: relative;
+    text-align: center;
+    color: var(--gray);
+    padding: 40px;
+    border-radius: 10px;
+    z-index: 1;
+}
 
-    .overlay {
-            position: relative;
-            text-align: center;  
-            background-color: rgba(0, 0, 0, 0.5); 
-            color: var(--gray);
-            padding: 80px; 
-            border-radius: 10px; 
-            z-index: 1; 
-        
+.overlay-title {
+    font-size: 3.5rem;
+    font-family: 'Ms Madi', cursive;
+    margin-bottom: 10px;
+}
 
-            .overlay-title {
-                font-size: 3.5rem; 
-                font-family: 'Ms Madi', cursive;
-            }
-        }
+.overlay-p {
+    font-size: 1.5rem;
+}
 
-    .side-hero-content {
-        padding: 20px; 
-        text-align: center; 
-        background-color: var(--background-dark);
-    }
+.side-hero-content {
+    padding: 20px;
+    text-align: center;
+    background-color: var(--background-dark);
+    color: var(--light-gray);
+    margin-top: 40px;
+}
 
-    .beside-hero-content {
-        display: inline-block;
-        padding: 20px; 
-        min-width: 80%;
-        width: auto;
-        text-align: center; 
-        background-color: var(--background-dark);
+.beside-hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    background-color: var(--background-dark);
+    margin-top: 20px;
+    color: var(--light-gray);
+}
 
-        img {
-            height: auto; 
-            border-radius: 10px; 
-        }
-    }
+.image-and-text {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
 
+.image-and-text img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    height: auto;
+}
 
+.productionCoffeTexts {
+    max-width: 500px;
+    text-align: left;
+    font-size: 1.1rem;
+}
+
+.values-section {
+    padding: 20px;
+    text-align: center;
+    color: var(--light-gray);
+    margin-top: 40px;
+}
+
+.values-section img {
+    width: 100%;
+    max-width: 500px;
+    margin-top: 20px;
+    border-radius: 10px;
 }

@@ -1,5 +1,5 @@
 .product-card {
-    border: 1px solid #ccc;
+    border: 1px solid whitesmoke;
     border-radius: 5px;
     padding: 16px;
     text-align: center;
@@ -9,6 +9,7 @@
     height: 400px;
     cursor: pointer;
     margin: 20px auto;
+    box-shadow: 5px 8px 12px var(--coffee-brown);
     
   }
   
