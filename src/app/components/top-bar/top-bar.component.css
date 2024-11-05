@@ -22,10 +22,11 @@
     }
 
     #progress {
-        position: fixed;
+        position: relative;
         border-radius: 10px;
-        width: 0%;
         top: 0;
+        left: 22px;
+        top: 5px;
         height: 3px;
         background-color: var(--coffee-light);
         animation: progress-grow auto linear;
@@ -40,6 +41,6 @@
         width: 0%;
     }
     100% {
-        width: 100%;
+        width: 97%;
     }
 }
