@@ -90,6 +90,7 @@
     border-radius: 10px;
     height: auto;
     
+    
 }
 
 .overlay, .side-hero-content, .beside-hero-content {
@@ -131,6 +132,40 @@
     max-width: 500px;
     margin-top: 20px;
     border-radius: 10px;
+    
+}
+
+.cards-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    margin-top: 40px;
+    padding: 20px;
+    border-radius: 20px;
+    background: var(--background-dark);
+}
+
+.card {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    margin-top: 40px;
+    width: 500px;
+    height: auto;
+    padding: 20px;
+    border-radius: 20px;
+    background: linear-gradient(120deg, var(--background-dark), var(--coffee-light));
+}
+
+.cards-section img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    object-fit: cover;
 }
 
 @keyframes reveal {

@@ -4,6 +4,10 @@ import { AppRoutingModule } from '../../app-routing.module';
 import { CommonModule } from '@angular/common';
 import { AppModule } from '../../app.module';
 
+
+
+
+
 @Component({
   selector: 'app-home',
   standalone: true,
@@ -16,6 +20,8 @@ export class HomeComponent {
   subtitle = 'Bienvenidos a Coffe Family, donde cada grano importa!';
 
   constructor() { }
+
+  
 
   ngOnInit() {
   }

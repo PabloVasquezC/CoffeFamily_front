@@ -15,6 +15,7 @@ import { provideHttpClient, withFetch, HttpClientModule } from '@angular/common/
 @NgModule({
   
   imports: [
+    
     CommonModule,
     BrowserModule, 
     AppComponent,
@@ -26,7 +27,7 @@ import { provideHttpClient, withFetch, HttpClientModule } from '@angular/common/
     HttpClientModule
   ],
   exports: [
-    RouterModule,
+    RouterModule, 
     ProductCardComponent,
     ProductsPageComponent,
     HomeComponent,

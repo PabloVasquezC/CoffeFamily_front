@@ -1,9 +1,10 @@
-import { Component } from '@angular/core';
+import { AfterViewInit, Component } from '@angular/core';
 import { ProductCardComponent } from './product-card/product-card.component';
 import { Product } from '../../models/product/product';
 import { CommonModule } from '@angular/common';
 import { ProductService } from '../../services/product.service';
 import { provideHttpClient, withFetch } from '@angular/common/http';
+
 
 @Component({
   selector: 'app-products-page',
@@ -16,7 +17,7 @@ import { provideHttpClient, withFetch } from '@angular/common/http';
     ProductService,
   ]
 })
-export class ProductsPageComponent {
+export class ProductsPageComponent  {
   products: Product[] = [];
 
   constructor(private productService: ProductService) { }
