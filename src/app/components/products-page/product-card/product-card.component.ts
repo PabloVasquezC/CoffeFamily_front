@@ -6,7 +6,8 @@ import { Product } from '../../../models/product/product';
   standalone: true,
   imports: [],
   templateUrl: './product-card.component.html',
-  styleUrl: './product-card.component.css'
+  styleUrl: './product-card.component.css',
+
 })
 export class ProductCardComponent {
 

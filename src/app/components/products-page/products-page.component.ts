@@ -1,26 +1,23 @@
-import { AfterViewInit, Component } from '@angular/core';
-import { ProductCardComponent } from './product-card/product-card.component';
-import { Product } from '../../models/product/product';
-import { CommonModule } from '@angular/common';
+import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
 import { ProductService } from '../../services/product.service';
-import { provideHttpClient, withFetch } from '@angular/common/http';
-
+import { Product } from '../../models/product/product';
+import { ProductCardComponent } from './product-card/product-card.component';
+import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'app-products-page',
   standalone: true,
-  imports: [ProductCardComponent, CommonModule],
+  selector: 'app-products-page',
   templateUrl: './products-page.component.html',
-  styleUrls: ['./products-page.component.css'], 
-  providers: [
-    
-    ProductService,
-  ]
+  styleUrls: ['./products-page.component.css'],
+  imports: [ProductCardComponent, CommonModule],
 })
-export class ProductsPageComponent  {
+export class ProductsPageComponent implements OnInit {
   products: Product[] = [];
 
-  constructor(private productService: ProductService) { }
+  constructor(
+    private productService: ProductService,
+    private cdRef: ChangeDetectorRef
+  ) {}
 
   ngOnInit() {
     this.listProducts();
@@ -31,6 +28,8 @@ export class ProductsPageComponent  {
       next: (products) => {
         this.products = products;
         console.log(this.products);
+        this.cdRef.detectChanges();  // Forzar detección de cambios
+        console.log('Products:', this.products);
       },
       error: (err) => {
         console.error('Error fetching products:', err);
