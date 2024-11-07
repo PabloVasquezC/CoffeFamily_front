@@ -2,6 +2,7 @@
     background: linear-gradient(var(--background-coffe), var(--gray));
     opacity: .9;
     border-radius: 40px; 
+    box-shadow: 2px 3px 150px var(--coffee-light);
 
     .navbar-toggler-icon {
         color: var(--coffee-light);
@@ -33,7 +34,8 @@
     height: 4px; 
     z-index: 100;
     border-radius: 10px;
-    background-color: var(--coffee-light);
+    background: linear-gradient(90deg, var(--background-dark), var(--coffee-light));
+    /* background-color: var(--coffee-light); */
     animation: progress-grow auto linear;
     animation-timeline: scroll(root);
 }

@@ -1,3 +1,8 @@
+.offcanvas {
+  background: linear-gradient(160deg, #333, var(--background-dark));
+  color: whitesmoke;
+}
+
 li a {
   display: block;
   color: whitesmoke;
@@ -6,7 +11,7 @@ li a {
 }
 
 li a:hover {
-  background-color: #111;
+  background: #111;
   color: var(--coffee-light);
 
 }

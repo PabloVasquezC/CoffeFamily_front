@@ -9,7 +9,7 @@
     --contrast-light: #f1f1f1;   /* Gris claro o blanco suave (para texto o elementos de contraste) */
     --text-light: #ffffff;       /* Blanco para texto en fondos oscuros */
     --gray: #a8a8a8;             /* Gris para detalles o borde de elementos */
-    --green: #8bff61;            /* Verde para elementos de éxito o positivos */
+    --green: #00ff4c;            /* Verde para elementos de éxito o positivos */
   }
 
   body {
