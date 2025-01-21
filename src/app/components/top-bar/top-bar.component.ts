@@ -12,6 +12,6 @@ import { SideBarComponent } from '../side-bar/side-bar.component';
 export class TopBarComponent {
   items: Item[] = []
   
-
+  
 
 }

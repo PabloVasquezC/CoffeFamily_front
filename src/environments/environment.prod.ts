@@ -1,4 +1,4 @@
 export const prodEnvironment = {
     production: true,
-    apiUrl: 'https://coffee-family-5527c1132a02.herokuapp.com/'
+    apiUrl: 'coffefamily-a2gdb3cyf7hed8g7.canadacentral-01.azurewebsites.net'
 };
